@@ -25,7 +25,7 @@ spring:
         - id: ms-bankaccount-debitcard
           uri: lb://ms-bankaccount
           predicates:
-          - Path=/api/DebitCards/**
+          - Path=/api/debitcards/**
 
 server:
   port: 8090
