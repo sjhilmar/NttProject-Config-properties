@@ -1,6 +1,6 @@
 spring:
   data:
-    monbodb:
+    mongodb:
       uri: mongodb://localhost:27017/mobilewallet
 springdoc:
   swagger-ui:
