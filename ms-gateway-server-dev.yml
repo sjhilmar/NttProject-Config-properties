@@ -26,6 +26,10 @@ spring:
           uri: lb://ms-bankaccount
           predicates:
           - Path=/api/debitcards/**
+        - id: ms-mobilewallet
+          uri: lb://ms-mobilewallet
+          predicates:
+          - Path=/api/wallets/**
 
 server:
   port: 8090
