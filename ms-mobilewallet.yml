@@ -27,8 +27,8 @@ eureka:
       bootstrap-servers: localhost:9092
       group-id: ms-mobilewallet-group
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     topic:
-      bank-account-request: "Bank-account-request-topic"
+      bank-account-request: "bank-account-request-topic"
       bank-account-response: "bank-account-response-topic"
 
