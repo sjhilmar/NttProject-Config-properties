@@ -29,5 +29,6 @@ eureka:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     topic:
-      bank-account-request: "bank-account-request"
+      bank-account-request: "ank-account-request-topic"
+      bank-account-response: "bank-account-response-topic"
 
