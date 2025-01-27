@@ -28,6 +28,11 @@ eureka:
       group-id: ms-mobilewallet-group
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.example.ms_bankaccount.model
     topic:
       bank-account-request: "bank-account-request-topic"
       bank-account-response: "bank-account-response-topic"
