@@ -34,21 +34,6 @@ spring:
           uri: lb://ms-customer
           predicates:
           - Path=/api/customers/reports/**
-        - id: secure_route
-          uri: http://localhost:8089
-          predicates:
-            - Path=/secure/**
-          filters:
-            - StripPrefix=1
-            - name: JwtAuthenticationFilter
-        - id: public_route
-          uri: http://localhost:8089
-          predicates:
-            - Path=/public/**
-          filters:
-            - StripPrefix=1
-#  main:
-#    allow-bean-definition-overriding: true
 server:
   port: 8090
 
@@ -56,6 +41,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-
 jwt:
-  secret: eW91cl9iYXNlNjRfZW5jb2RlZF9zZWNyZXRfa2V5
+  secret: my-secret-key
