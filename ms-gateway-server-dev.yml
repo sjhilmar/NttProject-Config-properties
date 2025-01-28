@@ -47,8 +47,8 @@ spring:
             - Path=/public/**
           filters:
             - StripPrefix=1
-  main:
-    allow-bean-definition-overriding: true
+#  main:
+#    allow-bean-definition-overriding: true
 server:
   port: 8090
 
