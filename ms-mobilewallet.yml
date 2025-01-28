@@ -16,10 +16,7 @@ spring:
         spring:
           json:
             trusted:
-              packages: com.example.ms_mobilewallet.dto
-    topic:
-      bank-account-request: "bank-account-request-topic"
-      bank-account-response: "bank-account-response-topic"
+              packages: "*"
 springdoc:
   swagger-ui:
     path: /swagger-ui.html

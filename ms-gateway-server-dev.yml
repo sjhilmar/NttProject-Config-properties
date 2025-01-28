@@ -30,6 +30,10 @@ spring:
           uri: lb://ms-mobilewallet
           predicates:
           - Path=/api/wallets/**
+        - id: ms-customer-reports
+          uri: lb://ms-customer
+          predicates:
+          - Path=/api/customers/reports/**
 
 server:
   port: 8090
