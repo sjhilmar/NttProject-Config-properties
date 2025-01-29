@@ -34,6 +34,10 @@ spring:
           uri: lb://ms-customer
           predicates:
           - Path=/api/customers/reports/**
+        - id: ms-bootcoin
+          uri: lb://ms-bootcoin
+          predicates:
+          - Path=/api/bootcoin/users/**
 server:
   port: 8090
 
